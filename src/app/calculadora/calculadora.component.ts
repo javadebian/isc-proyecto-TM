@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calculadora.component.scss']
 })
 export class CalculadoraComponent implements OnInit {
-
-  constructor() { }
+  value: string;
+  constructor() {
+    this.value = '';
+  }
 
   ngOnInit(): void {
   }
 
+  operadorCadena(valor: string): void{
+    this.value += valor;
+  }
+
+  resetCalculadora():void{
+    this.value = '';
+  }
+
+  calcularOperaciones():void{
+    this.value = eval(this.value);
+  }
 }

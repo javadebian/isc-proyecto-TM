@@ -1,1 +1,25 @@
-<p>calculadora works!</p>
+<div>
+  <h3>Calculadora Basica</h3>
+  <p>Calculadora de 4 operaciones!!.</p>
+  <input type="textfield" [(ngModel)]="value">
+  <br>
+  <input type="button" value="1" (click)="operadorCadena('1')">
+  <input type="button" value="2" (click)="operadorCadena('2')">
+  <input type="button" value="3" (click)="operadorCadena('3')">
+  <input type="button" value="+" (click)="operadorCadena('+')">
+  <br>
+  <input type="button" value="4" (click)="operadorCadena('4')">
+  <input type="button" value="5" (click)="operadorCadena('5')">
+  <input type="button" value="6" (click)="operadorCadena('6')">
+  <input type="button" value="-" (click)="operadorCadena('-')">
+  <br>
+  <input type="button" value="7" (click)="operadorCadena('7')">
+  <input type="button" value="8" (click)="operadorCadena('8')">
+  <input type="button" value="9" (click)="operadorCadena('9')">
+  <input type="button" value="*" (click)="operadorCadena('*')">
+  <br>
+  <input type="button" value="0" (click)="operadorCadena('0')">
+  <input type="button" value="c" (click)="resetCalculadora()">
+  <input type="button" value="/" (click)="operadorCadena('/')">
+  <input type="button" value="=" (click)="calcularOperaciones()">
+</div>
