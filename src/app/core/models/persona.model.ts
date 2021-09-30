@@ -3,4 +3,5 @@ export interface PersonaModel {
   dni: number;
   nombres: string;
   apellidos: string;
+  img: string;
 }

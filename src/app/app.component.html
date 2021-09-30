@@ -44,8 +44,12 @@
   </li>
 </ul>
 
-
-<!-- 2021Unsaac * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div style="display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap">
+  <div *ngFor="let persona of personas; index as i">
+    <img [src]="persona.img" width="300px" height="300px">
+  </div>
+</div>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
 <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
