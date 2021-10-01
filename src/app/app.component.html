@@ -44,9 +44,18 @@
   </li>
 </ul>
 
-<div style="display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap">
+<div class="divResp">
   <div *ngFor="let persona of personas; index as i">
     <img [src]="persona.img" width="300px" height="300px">
+  </div>
+</div>
+
+<div class="divResp">
+  <div style="display: flex; flex-direction: column" *ngFor="let producto of productos; index as i">
+    <img [src]="producto.foto" width="300px" height="300px">
+    <label>Producto : {{ producto.nombre | uppercase }}</label>
+    <label>Precio : {{ producto.precio | currency }}</label>
+    <label>Descripcion : <p>{{ producto.descripcion }} </p></label>
   </div>
 </div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
@@ -56,5 +65,6 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
 
 <router-outlet></router-outlet>
